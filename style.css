@@ -1,0 +1,40 @@
+body {
+   height: 100vh;
+   margin: 0;
+}
+
+.popup {
+   position: fixed;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 90%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 999;
+}
+
+.inner {
+   border: 1px solid red;
+   padding: 20px;
+   border-radius: 20px;
+   color: white;
+}
+
+.opener {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100px;
+   height: 40px;
+   background-color: rgba(30, 155, 82, 0.5);
+   transition: all 0.3s ease;
+   margin-bottom: 10px;
+}
+
+.popup.active {
+   opacity: 1;
+   visibility: visible;
+}
